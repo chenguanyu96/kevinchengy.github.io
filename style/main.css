@@ -1,0 +1,183 @@
+html, body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    color: #555;
+    overflow: auto;
+    overflow-x: auto;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    height: 3%;
+    min-height: 20px;
+}
+
+.content-item {
+    width: 75%;
+    height: 90%;
+}
+
+.content-info {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ui.secondary.vertical.pointing.menu {
+    height: 100%;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.ui.card {
+    border-radius: 0;
+    border-right: none;
+}
+
+.ui.card .image, .ui.card .image img{
+    border-radius: 0;
+    border: none;
+}
+
+.email {
+    font-size: 9pt;
+}
+
+.spacing {
+    height: 8px;
+}
+
+#about {
+    font-family: 'Lato', sans-serif;
+    height: auto;
+    display: none;
+}
+
+.emphasis {
+    color: #000;
+    letter-spacing: 3px;
+}
+
+.info{
+    font-size: 14pt;
+    letter-spacing: 1px;
+}
+
+.custom-active {
+    font-weight: bold !important;
+    color: #000 !important;
+}
+
+.courses-item .item:active {
+    border: none !important;
+}
+
+.highlight {
+    border-bottom: 1px dotted #aaa;
+}
+
+.shown {
+    display: block !important;
+}
+
+#projects {
+    display: none;
+    width: 90%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#projects .content-info {
+    width: 100%;
+    height: auto;
+    align-items:  flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-top: 5px !important;
+}
+
+.mobile {
+    display: none !important;
+}
+
+@media (max-width: 800px) {
+
+    .custom-sidebar {
+        height: 100% !important;
+        overflow: hidden !important;
+        overflow-y: auto !important;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .content-item {
+        width: 98%;
+        height: 90% !important;
+        max-height: 90%;
+        margin: 0 !important;
+        overflow-y: auto;
+    }
+     
+    .footer {
+        width: 100%;
+        height: 5%;
+        text-align: center;
+    }
+
+    .content-container {
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .mobile {
+        margin-left: 5px !important;
+        margin-top: 5px !important;
+        display: block !important;
+    }
+
+    .toggle-sidebar {
+        padding: 5px !important;
+        width: 50px !important;
+        height: 50px !important;
+        background-size: 40px 40px !important;
+    }
+
+    .content-info {
+        height: 80%;
+    }
+
+    .item, .card, .sidebar {
+        background: #fff !important;
+    }
+}
